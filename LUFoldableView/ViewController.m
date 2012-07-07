@@ -17,7 +17,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     LUFoldableView *foldableView = [[[LUFoldableView alloc] initWithImage:[UIImage imageNamed:@"1.png"] tailImage:[UIImage imageNamed:@"2.png"] numberOfFolds:2 vertical:NO] autorelease];
     [self.view addSubview:foldableView];
-    [foldableView foldWithDuration:3.5 completion:^(BOOL finished){}];
+    [foldableView foldWithDuration:3.5 completion:nil];
 }
 
 - (void)viewDidUnload

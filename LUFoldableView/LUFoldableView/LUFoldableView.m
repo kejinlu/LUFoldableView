@@ -310,7 +310,7 @@
         [CATransaction setValue:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut] forKey:kCATransactionAnimationTimingFunction];
         
         [CATransaction setCompletionBlock:^{
-            completion(YES);
+            if(completion) completion(YES);;
         }];
         
         for (int i = 0; i < [_foldSegmentLayers count]; i ++) {
@@ -405,7 +405,7 @@
         [CATransaction setValue:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut] forKey:kCATransactionAnimationTimingFunction];
         
         [CATransaction setCompletionBlock:^{
-            completion(YES);
+            if(completion) completion(YES);;
         }];
         
         for (int i = 0; i < [_foldSegmentLayers count]; i ++) {
@@ -510,7 +510,7 @@
         [CATransaction setValue:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut] forKey:kCATransactionAnimationTimingFunction];
         
         [CATransaction setCompletionBlock:^{
-            completion(YES);
+            if(completion) completion(YES);;
         }];
         
         for (int i = 0; i < [_foldSegmentLayers count]; i ++) {
@@ -604,7 +604,7 @@
         [CATransaction setValue:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut] forKey:kCATransactionAnimationTimingFunction];
         
         [CATransaction setCompletionBlock:^{
-            completion(YES);
+            if(completion) completion(YES);;
         }];
         
         for (int i = 0; i < [_foldSegmentLayers count]; i ++) {
